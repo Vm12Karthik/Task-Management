@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sign In / Sign Up Section -->
+    <div id="auth-section">
+      <h2>Sign In / Sign Up</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit" id="btn"style="background-color: orange;">Submit</button>
+      </form>
+    </div>
+
+    <!-- Task Manager Section -->
+    <div id="task-section" class="hidden">
+      <h2>Welcome, <span id="display-username"></span>!</h2>
+      <p>Email: <span id="display-email"></span></p>
+
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter task" required>
+        <input type="date" id="task-date" required>
+        <input type="time" id="task-time" required>
+        <button type="submit" id="btn" style="background-color: aqua;">Add Task</button>
+      </form>
+
+      <ul id="task-list"></ul>
+
+      <button id="logout-btn" style="background-color: red; color: white;">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

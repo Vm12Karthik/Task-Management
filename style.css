@@ -1,0 +1,82 @@
+/* Background image placeholder */
+/* Add your background image here */
+body {
+  margin: 0;
+  height: 100vh;                /* full viewport height */
+  display: flex;
+  justify-content: center;      /* center horizontally */
+  align-items: center;          /* center vertically */
+  font-family: Arial, sans-serif;
+  background: url('task.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 50vw;                  /* 50% of viewport width */
+  height: 50vh;                 /* 50% of viewport height */
+  padding: 20px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #9d50bb);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow-y: auto;             /* enable scroll if content exceeds container */
+}
+
+
+/* Hidden sections */
+.hidden {
+  display: none;
+}
+
+/* Input and button styling */
+input,btn, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  color: white;
+  border: none;
+  cursor: pointer;
+   transition: filter 0.3s ease;
+}
+
+#btn,#logout-btn{
+  background: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+button:hover {
+    filter: brightness(80%); 
+
+}
+
+/* Task list styling */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #f4f4f4;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
